@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://brujularojadecolombia.z15.web.core.windows.net/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brújula Roja · Encuentra dónde donar sangre en Colombia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Brújula Roja · Encuentra dónde donar sangre en Colombia_files/css2" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F2F5F9;--surface:#FFFFFF;--ink:#0E1B33;--muted:#4A5873;--line:#D5DCE8;
+  --red:#C8102E;--red-ink:#FFFFFF;--teal:#0B7A7C;--soft:#E7EDF6;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1220;--surface:#142038;--ink:#E8EEF8;--muted:#A3B1CB;--line:#2A3956;
+    --red:#FF5A6E;--red-ink:#0B1220;--teal:#4FD1D3;--soft:#1B2A47;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1220;--surface:#142038;--ink:#E8EEF8;--muted:#A3B1CB;--line:#2A3956;
+  --red:#FF5A6E;--red-ink:#0B1220;--teal:#4FD1D3;--soft:#1B2A47;color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font:800 1.3rem "Bricolage Grotesque",sans-serif;display:flex;align-items:center;gap:10px}
+.brand svg{width:28px;height:28px}
+.top a.cta-s{font-weight:600;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);padding:8px 14px;border-radius:999px;font-size:.9rem}
+.hero{padding:18px 0 28px}
+.hero h1{font-size:clamp(2.1rem,6vw,4rem);font-weight:800;max-width:15ch}
+.hero p.lead{max-width:56ch;color:var(--muted);font-size:1.08rem;margin:14px 0 0}
+.tracker{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:18px;margin-top:26px}
+.panel{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:20px}
+.panel label{display:block;font-weight:600;font-size:.92rem;margin:0 0 6px}
+select,input[type=text]{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 12px}
+.field{margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:.9rem;font-weight:500;color:var(--ink);background:var(--soft);border:1.5px solid transparent;border-radius:999px;padding:8px 13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.btn{font:inherit;font-weight:600;border:0;border-radius:12px;padding:13px 16px;cursor:pointer;width:100%}
+.btn.primary{background:var(--red);color:var(--red-ink);font-size:1.02rem}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);margin-top:10px}
+.btn:hover{filter:brightness(1.06)}
+.status{min-height:1.4em;font-size:.88rem;color:var(--muted);margin:10px 0 0}
+.mapbox{display:flex;flex-direction:column;gap:10px}
+.mapframe{flex:1;min-height:420px;border:1.5px solid var(--line);border-radius:18px;overflow:hidden;background:var(--soft)}
+.mapframe iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+.maplink{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;font-size:.92rem;color:var(--muted)}
+.maplink a{font-weight:600}
+section.block{padding:44px 0 8px}
+section.block h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:8px}
+section.block>.wrap>p.sub{color:var(--muted);max-width:60ch;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.org{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.org h3{font-size:1.15rem}
+.org p{margin:0;color:var(--muted);font-size:.95rem}
+.org a{font-weight:600;margin-top:auto;padding-top:8px}
+.verified{font-size:.8rem;font-weight:600;color:var(--teal)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;counter-reset:s;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px 18px 18px 56px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--red);color:var(--red-ink);font:700 .95rem "Bricolage Grotesque",sans-serif;display:grid;place-items:center}
+.steps b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;margin-bottom:2px}
+.steps span{color:var(--muted);font-size:.94rem}
+details{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{margin-top:56px;border-top:1.5px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:.9rem}
+footer p{max-width:72ch;margin:0 0 8px}
+@media (max-width:860px){.tracker{grid-template-columns:minmax(0,1fr)}.mapframe,.mapframe iframe{min-height:340px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand" aria-label="Brújula Roja">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c5 7 9 11.5 9 17a9 9 0 0 1-18 0c0-5.500 4-10 9-17z" fill="var(--red)"></path><circle cx="16" cy="19" r="3" fill="var(--bg)"></circle></svg>
+      Brújula Roja
+    </div>
+    <a class="cta-s" href="https://brujularojadecolombia.z15.web.core.windows.net/#buscador">Buscar un punto</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Encuentra dónde donar sangre cerca de ti.</h1>
+      <p class="lead">Elige tu departamento o usa tu ubicación y mira en el mapa los bancos de sangre, hospitales y puntos de donación de tu zona en Colombia.</p>
+
+      <div class="tracker" id="buscador">
+        <div class="panel">
+          <div class="field">
+            <label for="dep">Departamento</label>
+            <select id="dep"><option value="">Todo Colombia</option><option value="Amazonas">Amazonas</option><option value="Antioquia">Antioquia</option><option value="Arauca">Arauca</option><option value="Atlántico">Atlántico</option><option value="Bogotá D.C.">Bogotá D.C.</option><option value="Bolívar">Bolívar</option><option value="Boyacá">Boyacá</option><option value="Caldas">Caldas</option><option value="Caquetá">Caquetá</option><option value="Casanare">Casanare</option><option value="Cauca">Cauca</option><option value="Cesar">Cesar</option><option value="Chocó">Chocó</option><option value="Córdoba">Córdoba</option><option value="Cundinamarca">Cundinamarca</option><option value="Guainía">Guainía</option><option value="Guaviare">Guaviare</option><option value="Huila">Huila</option><option value="La Guajira">La Guajira</option><option value="Magdalena">Magdalena</option><option value="Meta">Meta</option><option value="Nariño">Nariño</option><option value="Norte de Santander">Norte de Santander</option><option value="Putumayo">Putumayo</option><option value="Quindío">Quindío</option><option value="Risaralda">Risaralda</option><option value="San Andrés y Providencia">San Andrés y Providencia</option><option value="Santander">Santander</option><option value="Sucre">Sucre</option><option value="Tolima">Tolima</option><option value="Valle del Cauca">Valle del Cauca</option><option value="Vaupés">Vaupés</option><option value="Vichada">Vichada</option></select>
+          </div>
+          <div class="field">
+            <label for="city">Ciudad o municipio</label>
+            <input id="city" type="text" placeholder="Ej.: Barranquilla, Pasto, Montería" autocomplete="off">
+          </div>
+          <div class="field">
+            <label id="tl">Qué quieres buscar</label>
+            <div class="chips" role="group" aria-labelledby="tl" id="chips"><button type="button" class="chip" aria-pressed="true">Bancos de sangre</button><button type="button" class="chip" aria-pressed="false">Puntos de donación</button><button type="button" class="chip" aria-pressed="false">Cruz Roja</button><button type="button" class="chip" aria-pressed="false">Hospitales</button></div>
+          </div>
+          <button class="btn primary" id="go" type="button">Ver en el mapa</button>
+          <button class="btn ghost" id="geo" type="button">Usar mi ubicación actual</button>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="mapbox">
+          <div class="mapframe"><iframe id="map" title="Mapa de puntos de donación de sangre" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="./Brújula Roja · Encuentra dónde donar sangre en Colombia_files/maps.html"></iframe></div>
+          <div class="maplink">
+            <span id="qtxt">Mostrando: banco de sangre en Colombia</span>
+            <a id="ext" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=banco+de+sangre+Colombia">Abrir en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <h2>Redes oficiales para confirmar horarios</h2>
+        <p class="sub">Los horarios y las jornadas cambian. Antes de ir, confirma con la institución que elijas.</p>
+        <div class="grid">
+          <article class="org">
+            <span class="verified">Bogotá</span>
+            <h3>Banco Distrital de Sangre (IDCBIS)</h3>
+            <p>Punto fijo en la carrera 32 n.º 12-81, Bogotá. Publica además jornadas en otros puntos de la ciudad.</p>
+            <a href="https://www.saludcapital.gov.co/Paginas/reddistritaldesangre.aspx" target="_blank" rel="noopener">Red Distrital de Sangre</a>
+          </article>
+          <article class="org">
+            <span class="verified">Todo el país</span>
+            <h3>Cruz Roja Colombiana</h3>
+            <p>Tiene seccionales en varias ciudades. Consulta en la tuya si recibe donantes y en qué horario.</p>
+            <a href="https://www.cruzrojacolombiana.org/" target="_blank" rel="noopener">cruzrojacolombiana.org</a>
+          </article>
+          <article class="org">
+            <span class="verified">Todo el país</span>
+            <h3>Instituto Nacional de Salud</h3>
+            <p>Coordina la Red Nacional de Bancos de Sangre y publica información oficial sobre donación.</p>
+            <a href="https://www.ins.gov.co/" target="_blank" rel="noopener">ins.gov.co</a>
+          </article>
+          <article class="org">
+            <span class="verified">Todo el país</span>
+            <h3>Ministerio de Salud</h3>
+            <p>Normas y orientación general sobre donación voluntaria de sangre en Colombia.</p>
+            <a href="https://www.minsalud.gov.co/" target="_blank" rel="noopener">minsalud.gov.co</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <h2>Antes de salir</h2>
+        <p class="sub">Una lista corta para no perder el viaje.</p>
+        <ol class="steps">
+          <li><b>Llama o revisa su sitio</b><span>Pregunta si hay jornada hoy y hasta qué hora reciben donantes.</span></li>
+          <li><b>Lleva tu documento</b><span>Necesitas tu cédula u otro documento de identidad vigente.</span></li>
+          <li><b>Come y bebe agua</b><span>No vayas en ayunas. Pregunta al centro qué comida recomienda.</span></li>
+          <li><b>Responde con sinceridad</b><span>El personal te hará preguntas de salud para decidir si puedes donar ese día.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <h2>Preguntas frecuentes</h2>
+        <p class="sub">Orientación general. Cada centro define si puedes donar según su evaluación.</p>
+        <details><summary>¿Quién puede donar?</summary><p>En general, personas adultas sanas dentro del rango de edad y peso que fija cada banco de sangre. El centro lo confirma en una entrevista y revisión previas.</p></details>
+        <details><summary>¿Esta página es un banco de sangre?</summary><p>No. Brújula Roja es un sitio informativo independiente que te ayuda a ubicar centros. La donación se hace en el banco de sangre o punto que elijas.</p></details>
+        <details><summary>¿Por qué el mapa puede mostrar lugares que no reciben donantes?</summary><p>El mapa busca por palabras clave. Algunos resultados son laboratorios o servicios de transfusión que no toman donaciones. Confirma siempre con el lugar.</p></details>
+        <details><summary>¿Se guarda mi ubicación?</summary><p>No. Si la compartes, solo se usa en tu navegador para abrir la búsqueda en el mapa y no se envía a esta página.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Brújula Roja es un sitio informativo independiente. No es un banco de sangre ni una institución de salud y no ofrece consejo médico.</p>
+    <p>Los datos del mapa vienen de Google Maps. Los horarios y requisitos los define cada institución.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var DEPS=["Amazonas","Antioquia","Arauca","Atlántico","Bogotá D.C.","Bolívar","Boyacá","Caldas","Caquetá","Casanare","Cauca","Cesar","Chocó","Córdoba","Cundinamarca","Guainía","Guaviare","Huila","La Guajira","Magdalena","Meta","Nariño","Norte de Santander","Putumayo","Quindío","Risaralda","San Andrés y Providencia","Santander","Sucre","Tolima","Valle del Cauca","Vaupés","Vichada"];
+  var TERMS=[
+    {k:"banco de sangre",t:"Bancos de sangre"},
+    {k:"donación de sangre",t:"Puntos de donación"},
+    {k:"Cruz Roja banco de sangre",t:"Cruz Roja"},
+    {k:"hospital banco de sangre",t:"Hospitales"}
+  ];
+  var dep=document.getElementById("dep"),city=document.getElementById("city"),chips=document.getElementById("chips");
+  var map=document.getElementById("map"),qtxt=document.getElementById("qtxt"),ext=document.getElementById("ext"),st=document.getElementById("status");
+  var term=0;
+  var o=document.createElement("option");o.value="";o.textContent="Todo Colombia";dep.appendChild(o);
+  DEPS.forEach(function(d){var e=document.createElement("option");e.value=d;e.textContent=d;dep.appendChild(e)});
+  TERMS.forEach(function(x,i){
+    var b=document.createElement("button");b.type="button";b.className="chip";b.textContent=x.t;
+    b.setAttribute("aria-pressed",i===0?"true":"false");
+    b.addEventListener("click",function(){
+      term=i;
+      Array.prototype.forEach.call(chips.children,function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false")});
+    });
+    chips.appendChild(b);
+  });
+  function show(q,label){
+    map.src="https://www.google.com/maps?q="+encodeURIComponent(q)+"&output=embed";
+    ext.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+    qtxt.textContent="Mostrando: "+label;
+  }
+  function place(){
+    var c=city.value.trim(),d=dep.value;
+    var parts=[c,d].filter(Boolean);
+    return parts.length?parts.join(", "):"Colombia";
+  }
+  document.getElementById("go").addEventListener("click",function(){
+    var p=place(),k=TERMS[term].k;
+    show(k+" "+p+(p==="Colombia"?"":", Colombia"),k+" en "+p);
+    st.textContent="Mapa actualizado. Confirma el horario con el lugar antes de ir.";
+  });
+  city.addEventListener("keydown",function(e){if(e.key==="Enter"){document.getElementById("go").click()}});
+  document.getElementById("geo").addEventListener("click",function(){
+    if(!navigator.geolocation){st.textContent="Tu navegador no permite usar la ubicación. Escribe tu ciudad.";return}
+    st.textContent="Buscando tu ubicación…";
+    navigator.geolocation.getCurrentPosition(function(pos){
+      var ll=pos.coords.latitude.toFixed(5)+","+pos.coords.longitude.toFixed(5);
+      var k=TERMS[term].k;
+      map.src="https://www.google.com/maps?q="+encodeURIComponent(k)+"&ll="+ll+"&z=13&output=embed";
+      ext.href="https://www.google.com/maps/search/"+encodeURIComponent(k)+"/@"+ll+",13z";
+      qtxt.textContent="Mostrando: "+k+" cerca de ti";
+      st.textContent="Listo. Mostramos resultados cerca de tu ubicación.";
+    },function(){
+      st.textContent="No pudimos obtener tu ubicación. Revisa el permiso o escribe tu ciudad.";
+    },{timeout:10000});
+  });
+})();
+</script>
+
+
+</body></html>
